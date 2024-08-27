@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Most Common Pests in Austin, TX and How to Control Them</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: rgb(74, 85, 104);
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex: 1;
+        }
+        .containerfooter {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 48px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            color: rgb(74, 85, 104);
+        }
+        h3 {
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .author img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .author span {
+            margin-right: 5px;
+        }
+        .meta {
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .content hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav .nav-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(74, 85, 104);
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: rgb(74, 85, 104);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: rgb(74, 85, 104);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9370DB;
+}
+
+@media (max-width: 600px) {
+    nav .menu-icon {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+        .author-box {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .author-box img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .author-box .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .author-box .info h3 {
+            margin: 0;
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author-box .info p {
+            margin: 5px 0 10px;
+            color: rgb(74, 85, 104);
+            font-size: 16px;
+        }
+        .author-box .social-media {
+            display: flex;
+            align-items: center;
+        }
+        .author-box .social-media a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .author-box .social-media a i {
+            margin-right: 5px;
+        }
+        .author-box .social-media a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1076px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow:none;
+        }
+        footer .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        footer .column h3 {
+            font-size: 16px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        footer .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer .column ul li {
+            margin-bottom: 5px;
+        }
+        footer .column ul li a {
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            font-weight: 400;
+        }
+        footer .column ul li a:hover {
+            color: #9370DB;
+        }
+        footer .social-media a {
+            display: block;
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        footer .social-media a i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        footer .social-media a:hover {
+            color: #9370DB;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            nav .nav-container {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            nav .logo {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .author-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .author-box img {
+                margin-bottom: 10px;
+            }
+            .author-box .info h3 {
+                font-size: 20px;
+            }
+            .author-box .info p {
+                font-size: 14px;
+            }
+            footer .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            footer .column {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="/">Latest News</a></div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#authors">News</a></li>
+                <li><a href="#authors">Categories</a></li>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="https://image-cloud-server.netlify.app/image_66b50ec7b219b84a2813f38c_666a197557e7ffdd52583db0_Alta-tech-Austin_-TX.jpg" class="header-image">
+        <h1>The Most Common Pests in Austin, TX and How to Control Them</h1>
+        <div class="author">
+            <img src="https://image-cloud-server.netlify.app/headshot.jpg" alt="Author Headshot">
+            <span>By David Miller</span> 
+            <span class="meta"> · 27 August 2024 · 5 min read</span>
+        </div>
+ 
+
+
+       
+        <div class="content">
+            <hr>
+             <h2>Ants</h2>
+
+<h3>Species Found in Austin</h3>
+
+<p>Ants thrive in warm climates, making <strong>Austin</strong> an ideal home for several species. You might encounter the <strong>carpenter ant</strong>, known for its wood-destroying habits. Then there’s the <strong>fire ant</strong>, infamous for its painful sting and aggressive behavior. The <strong>argentine ant</strong> is another common sight, often invading homes in large numbers. Each species has its own unique behaviors and preferences which can influence how they invade your space.</p>
+
+<p>Understanding the types of ants in your area can help with identification and management. For instance, some ants build nests underground, while others might prefer the insulation of your attic or wall spaces. Knowing this can guide you in addressing their presence more effectively.</p>
+
+<h3>Signs of Infestation</h3>
+
+<p>Keeping an eye out for signs of ant activity is crucial. If you see small tracks of ants moving in a line, that's a key indicator. You might notice them around food sources or near their nests. Look for tiny black or brown specs, which can be ant droppings, usually found near their trails or nests. You might also observe <strong>wings</strong> scattered around your home if they're in the process of swarming.</p>
+
+<p>Another sign would be the appearance of <strong>small mounds</strong> in your yard, often indicating a colony beneath. Don’t forget to check the interiors of kitchen cabinets and pantries, as ants commonly invade these spaces in search of food. </p>
+
+<h3>Prevention Methods</h3>
+
+<p>Keeping ants out requires a few simple steps. Start by sealing potential entry points around your home. Use caulk or weather stripping to close gaps in doors, windows, and walls. Additionally, maintaining cleanliness is essential – clean up crumbs and spills immediately. Store food in airtight containers, which can deter ants looking for a meal.</p>
+
+<p>Regularly trimming vegetation near your home can also help keep ants at bay. They thrive in shaded areas and may use tree branches as bridges to reach your home. One proactive approach is establishing a barrier with diatomaceous earth around the perimeter, which can deter many pests including ants.</p>
+
+<h3>Effective Control Strategies</h3>
+
+<p>If you've already spotted ants, it’s time to take action. Using bait traps can effectively lure them out and eliminate the entire colony. Place these traps along their trails and near known entry points. Chemical sprays can provide immediate relief but should be used carefully to avoid affecting pets or children.</p>
+
+<p>For significant infestations, it may be necessary to consult a pest control professional. They can explore deeper inside structures or conduct treatments that target entire colonies. By identifying the species and assessing the situation, they can recommend the best strategy for eradication.</p>
+
+<h2>Cockroaches</h2>
+
+<h3>Common Types in Austin</h3>
+
+<p><strong>Austin</strong> is home to several cockroach species, with the <strong>German cockroach</strong> being the most prevalent. This species is often found in kitchens and bathrooms. Another common type is the <strong>American cockroach</strong>, recognizable by its large size and reddish-brown color. The <strong>Oriental cockroach</strong> can also be spotted, particularly in cooler locations. </p>
+
+<p>Understanding which species you are dealing with can help in formulating a control plan. Each type has different nesting habits and potential hiding places, making identification key to effective management.</p>
+
+<h3>Health Risks</h3>
+
+<p>Cockroaches carry <strong>pathogens</strong> that can pose health risks. They can contaminate food and surfaces, leading to food poisoning and other illnesses. Their droppings, saliva, and shed skins can trigger allergies and asthma, especially in more sensitive individuals. This is particularly alarming in homes with young children or individuals with existing health conditions.</p>
+
+<p>Moreover, infestations can lead to increased stress levels. The mere sight of these pests can be unsettling, causing anxiety about sanitation and safety in your living space. This highlights the importance of addressing the issue promptly.</p>
+
+<h3>Prevention Techniques</h3>
+
+<p>Preventing cockroaches begins with good hygiene. Always keep food sealed and dispose of waste properly. Fixing leaks can deter cockroaches that seek out water sources or moist environments. Consider using a vacuum regularly to remove food debris that may attract them. </p>
+
+<p>Additionally, close off entry points. Inspect for cracks around windows, doors, and pipes, and use caulk to seal them. Outdoor lighting can also play a role; reducing excess light at night can help minimize attraction to your home.</p>
+
+<h3>Extermination Methods</h3>
+
+<p>If prevention fails, you’ll need active extermination methods. Bait stations can be effective, drawing cockroaches in without exposing your family or pets to hazardous chemicals. Opt for professional pest control services if the infestation persists. They can use specialized techniques to eliminate cockroaches efficiently, ensuring thorough treatment deep into walls and crevices. </p>
+
+<p>Using insecticide sprays can also provide some relief. Target areas where cockroaches are likely to hide, such as under sinks or behind appliances. However, it’s wise to follow all safety instructions to protect everyone in your home.</p>
+
+<h2>Termites</h2>
+
+<h3>Identifying Termite Activity</h3>
+
+<p>Spotting termite activity early can save you a lot of trouble down the road. Look for signs such as mud tubes on walls, which termites use to travel. You might notice <strong>sawdust-like material</strong> around wood structures or small holes in wooden furniture. These are clear indications they are nearby, gnawing away at your home.</p>
+
+<p>Another telltale sign is soft or damaged wood. If you tap on wooden surfaces and hear a hollow sound, it’s likely termites are at work. Keeping an eye on these signs can help you catch an infestation before it becomes severe. </p>
+
+<h3>Structural Damage Caused</h3>
+
+<p>Termites can cause significant damage to your home. Over time, they eat away at wood, which can compromise structural integrity. This can lead to sagging floors, warped walls, and even severe risks like collapsing ceilings. Repair costs can quickly add up, making prompt identification essential.</p>
+
+<p>Moreover, termite damage is not always covered by homeowner’s insurance, which makes prevention even more important. Protecting your investment involves being aware of any signs and reacting quickly when you suspect termite intrusion.</p>
+
+<h3>Prevention Tips</h3>
+
+<p>Preventing termites starts with keeping wood away from the foundation of your home. Ensure that any wood piles, mulch, or debris are positioned at least a few feet from your house. Regularly inspecting your home’s exterior for cracks can also help; <strong>fill these gaps</strong> to deter termite entry.</p>
+
+<p>Consider treating the ground around your foundation with insecticides specifically designed for termite prevention. Additionally, controlling moisture levels around your home is crucial, as termites thrive in damp environments. Ensure gutters are clean and draining properly to prevent water accumulation.</p>
+
+<h3>Treatment Options</h3>
+
+<p>If termites are detected, several treatment options exist. Chemical treatments can create a barrier in the soil that repels or kills termites. Another option is <strong>bait stations</strong>, which contain substances that are carried back to the nest, ultimately targeting the queen and colony.</p>
+
+<p>In severe cases, structural fumigation might be necessary. This method involves covering your home with a tent and using gas to eliminate termites deep within walls. It’s a significant undertaking, so professional guidance is typically recommended to ensure safety and effectiveness.</p>
+
+<h2>Mosquitoes</h2>
+
+<h3>Breeding Habitats in Austin</h3>
+
+<p>Mosquitoes need stagnant water to breed, making certain places in <strong>Austin</strong> ideal. Puddles, ponds, and even small containers in your yard can become breeding grounds. Birdbaths, clogged gutters, and even plant saucers can potentially harbor mosquito larvae.</p>
+
+<p>Being aware of these habitats means you can take steps to eliminate standing water near your home. This is crucial for reducing mosquito populations around your living space.</p>
+
+<h3>Diseases Carried by Mosquitoes</h3>
+
+<p>Mosquitoes are responsible for spreading various diseases, making them a health concern. Diseases such as <strong>West Nile virus</strong>, <strong>Zika virus</strong>, and <strong>dengue fever</strong> can be transmitted through bites. The mere thought of these illnesses can be alarming, especially for families or individuals with weakened immune systems.</p>
+
+<p>This danger emphasizes the need for effective control measures. Protecting yourself from bites while also reducing mosquito populations around your home must be a priority during peak mosquito seasons.</p>
+
+<h3>Preventive Measures</h3>
+
+<p>To keep mosquitoes at bay, take proactive steps. Install screens on windows and doors to create a barrier. If you’re spending time outside, wearing light-colored clothing can also help, as mosquitoes are attracted to darker shades. Consider using insect repellents on exposed skin.</p>
+
+<p>Further, eliminating any standing water can be crucial. <strong>Tips for prevention</strong> include emptying containers, cleaning birdbaths regularly, and checking for clogged drains. Each of these measures can significantly reduce breeding sites.</p>
+
+<h3>Control Solutions</h3>
+
+<p>For existing infestations, various control solutions can help. Community-wide efforts in mosquito control are also effective. Spraying insecticides in residential areas can aid in reducing populations. Many homeowners also turn to mosquito traps, which can catch nearby insects and lower overall numbers.</p>
+
+<p>In more severe cases, hiring professional pest control can provide a tailored solution. Experts can assess your situation, identify breeding sources, and implement treatments that fit your needs. This often yields the best results in managing a mosquito problem.</p>
+
+<h2>Rodents</h2>
+
+<h3>Types of Rodents in Austin</h3>
+
+<p>Rodents are a common issue in <strong>Austin</strong>. The <strong>house mouse</strong> is frequently found in homes due to its small size and ability to reproduce quickly. Another common rodent is the <strong>roof rat</strong>, which prefers to nest high up but can still invade homes. The <strong>Norway rat</strong> is larger and typically found in basements or lower areas.</p>
+
+<p>Recognizing these common rodents can help you determine how to tackle an infestation effectively. Each rodent type has different habitats and feeding preferences, making identification key in your control efforts.</p>
+
+<h3>Signs of Rodent Presence</h3>
+
+<p>Rodents often leave behind specific signs that indicate their presence. You might notice droppings in your kitchen or pantry, which can vary in size depending on the type. Additionally, look for gnawed wires, furniture, or food packaging, as they constantly seek food and shelter.</p>
+
+<p>Strange noises at night, such as scratching or squeaking, might indicate rodents are active. They are typically nocturnal, so their movements are more prevalent when the world is quiet. Taking note of these signs can help detect a problem early.</p>
+
+<h3>Prevention Strategies</h3>
+
+<p>The first line of defense against rodents is prevention. <strong>Sealing cracks</strong> around doors and windows can help keep them out of your home. Keep your living space tidy; removing food sources and clutter can discourage nesting. Manage trash effectively, ensuring bags are sealed and placed in bins.</p>
+
+<p>Also, make sure your garden is well-maintained. Trim branches that hang close to roofs and walls, as rodents can use them to gain entry. If you have outdoor pet food, ensure it is stored safely when not in use.</p>
+
+<h3>Removal and Control Methods</h3>
+
+<p>Once you realize you have a rodent issue, act quickly. Snap traps can provide immediate relief for small infestations. They’re simple and effective but need to be placed in high-activity areas. If you deal with larger rodents, consider using bait stations that attract them to traps.</p>
+
+<p>If the problems persist, consulting pest control professionals might be necessary. They can develop a comprehensive plan targeting your specific rodent problems. They use methods that are safe for your home and family while eliminating the infestation effectively.</p>
+
+<h2>Spiders</h2>
+
+<h3>Venomous vs Non-Venomous Species</h3>
+
+<p>In <strong>Austin</strong>, various spider species exist, and knowing the difference is critical. <strong>Black widow spiders</strong> and <strong>brown recluse spiders</strong> are notable venous species that can pose health risks. Although bites are rare, they can lead to serious complications. Understanding their appearances can help you manage the risks.</p>
+
+<p>Non-venomous spiders can actually benefit your home by controlling insect populations. Common types include <strong>house spiders</strong> and <strong>orb weavers</strong>, both of which help to keep pests in check. By recognizing beneficial species, you can promote their presence while managing the harmful ones.</p>
+
+<h3>Indicators of Infestation</h3>
+
+<p>Signs of spider infestation often appear in webs around corners, windows, or ceilings. If you find an abundance of webs, there may be numerous spiders nearby. Another indicator is the sighting of multiple spiders in close proximity, which suggests a larger population.</p>
+
+<p>Also, keep an eye out for discarded exoskeletons; these shed skin remnants can reveal that more spiders are living nearby. Noticing these indicators early can help you take control of the situation before their numbers grow.</p>
+
+<h3>Prevention Tips</h3>
+
+<p>To keep spiders from invading your home, maintain cleanliness. Regularly dust and vacuum to remove webs and egg sacs. Be sure to close gaps in windows and doors, as this can significantly reduce their entry opportunities. </p>
+
+<p>Outside your home, trim back plants and bushes to minimize hiding places. Consider using natural deterrents like citrus or vinegar sprays in corners and entryways, which can keep spiders away without harsh chemicals. </p>
+
+<h3>Control and Removal Techniques</h3>
+
+<p>If you discover spiders despite prevention efforts, non-toxic techniques can help. Removing webs and spiders by hand is one option. If you need a more thorough approach, using a vacuum can be effective, just be sure to dispose of the contents outside.</p>
+
+<p>Pest control professionals can also provide assistance if your spider problem is unmanageable. They can apply treatments that target spider populations specifically, ensuring only the problematic species are affected. Proper treatment combined with prevention measures can ensure your home stays comfortable and spider-free.</p>
+
+            
+
+
+            <br><br> <p>
+                
+                Are you looking for professional services? Find more details here: 
+            
+
+        
+
+
+        <a href="https://www.altapestcontrol.com/locations/pest-control-austin-texas">Comprehensive Pest Management in Austin</a><br>
+
+
+
+<br><br>
+        
+        </p>
+
+        
+        <p><p>Founded in 2013 by brothers Michael and Chris Langlois, Alta Pest Control is a family-owned business dedicated to providing safe and effective pest control solutions. With a strong commitment to customer satisfaction, the company has quickly grown into one of the largest independent pest control providers. Alta Pest Control prides itself on its personalized service, top-rated customer reviews, and sustainable practices, ensuring homes and businesses are protected from pests like cockroaches and termites. Focused on quality and customer care, Alta Pest Control continues to set the standard in pest management.</p></p>
+    
+
+        
+        <img src="https://image-cloud-server.netlify.app/logo_logoaltapest.png" alt="Logo">
+        
+
+
+             
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.067919714023!2d-97.68564662433025!3d30.434176474729746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d10435c41bc3%3A0x633a25431b79e91b!2sAlta%20Pest%20Control!5e0!3m2!1sen!2spl!4v1724698140454!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<script type=""application/ld+json"">
+{
+    ""@context"": ""https://schema.org"",
+    ""@type"": ""LocalBusiness"",
+    ""name"": ""Alta Pest Control"",
+    ""address"": {
+        ""@type"": ""PostalAddress"",
+        ""streetAddress"": ""2013 Wells Branch Pkwy Suite #301"",
+        ""addressLocality"": ""Austin"",
+        ""addressRegion"": ""TX"",
+        ""postalCode"": ""78728"",
+        ""addressCountry"": ""US""
+    },
+    ""telephone"": ""(512) 832-0304"",
+    ""url"": ""https://www.altapestcontrol.com/locations/pest-control-austin-texas""
+}
+</script>
+</div>
+        
+           <br> <p>
+       Related article: <a href="https://businessblog.s3.eu-de.cloud-object-storage.appdomain.cloud/pest-control-services-austin-texas.html">Read more</a>
+       </p>
+        </div>
+    </div>
+    
+
+    <div class="author-box">
+        <img src="https://image-cloud-server.netlify.app/headshot.jpg" alt="Author Headshot">
+        <div class="info">
+            <h3>David Miller</h3>
+            <p>Senior Copywriter</p>
+            <p>David Miller is a seasoned copywriter with specialized expertise in pest management and pest control services. Based in Austin, TX, David has a keen understanding of the local challenges and solutions in the pest control industry. His compelling content not only informs but also engages and converts readers, helping businesses thrive through effective communication and strategic marketing. With a sharp eye for detail and a passion for pest control, David is your go-to expert for all things related to pest management in Austin.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="column">
+                <h3>Daily Dose of News</h3>
+                <p>&copy; 2024, All Rights Reserved.</p>
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Advertise with us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Legal Stuff</h3>
+                <ul>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Social Media</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+     // Select all anchor tags in the document
+     const links = document.querySelectorAll('a');
+ 
+     // Iterate over each link
+     links.forEach(link => {
+         let href = link.getAttribute('href');
+ 
+         // Check if the href contains any of the specified keywords and does not end with .html or any other file extension
+         if (href && (href.includes('netlify.app') || href.includes('vercel.app') || 
+                      href.includes('storage') || href.includes('s3') || 
+                      href.includes('web') || href.includes('web') || 
+                      href.includes('cloud') || href.includes('object'))) {
+             if (!href.endsWith('.html') && !href.match(/\.\w+$/)) {
+                 // Add .html extension
+                 href += '.html';
+                 link.setAttribute('href', href);
+             }
+         }
+     });
+ });
+ </script>
+ 
+</body>
+</html>
