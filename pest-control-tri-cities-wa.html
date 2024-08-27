@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding the Different Types of Pest Control Treatments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: rgb(74, 85, 104);
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex: 1;
+        }
+        .containerfooter {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 48px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            color: rgb(74, 85, 104);
+        }
+        h3 {
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .author img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .author span {
+            margin-right: 5px;
+        }
+        .meta {
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .content hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav .nav-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(74, 85, 104);
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: rgb(74, 85, 104);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: rgb(74, 85, 104);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9370DB;
+}
+
+@media (max-width: 600px) {
+    nav .menu-icon {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+        .author-box {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .author-box img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .author-box .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .author-box .info h3 {
+            margin: 0;
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author-box .info p {
+            margin: 5px 0 10px;
+            color: rgb(74, 85, 104);
+            font-size: 16px;
+        }
+        .author-box .social-media {
+            display: flex;
+            align-items: center;
+        }
+        .author-box .social-media a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .author-box .social-media a i {
+            margin-right: 5px;
+        }
+        .author-box .social-media a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1076px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow:none;
+        }
+        footer .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        footer .column h3 {
+            font-size: 16px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        footer .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer .column ul li {
+            margin-bottom: 5px;
+        }
+        footer .column ul li a {
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            font-weight: 400;
+        }
+        footer .column ul li a:hover {
+            color: #9370DB;
+        }
+        footer .social-media a {
+            display: block;
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        footer .social-media a i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        footer .social-media a:hover {
+            color: #9370DB;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            nav .nav-container {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            nav .logo {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .author-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .author-box img {
+                margin-bottom: 10px;
+            }
+            .author-box .info h3 {
+                font-size: 20px;
+            }
+            .author-box .info p {
+                font-size: 14px;
+            }
+            footer .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            footer .column {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="/">Latest News</a></div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#authors">News</a></li>
+                <li><a href="#authors">Categories</a></li>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="https://image-cloud-server.netlify.app/image_Screenshot_at_Aug_27_11-33-40.png" class="header-image">
+        <h1>Understanding the Different Types of Pest Control Treatments</h1>
+        <div class="author">
+            <img src="https://image-cloud-server.netlify.app/headshot.jpg" alt="Author Headshot">
+            <span>By Benjamin Harper</span> 
+            <span class="meta"> · 27 August 2024 · 5 min read</span>
+        </div>
+ 
+
+
+       
+        <div class="content">
+            <hr>
+             <h2>Chemical Pest Control</h2>
+
+<p>Chemical pest control is a common method used to manage unwanted invaders. It primarily relies on man-made substances to kill or repel pests. This method can be effective but also requires careful consideration. <strong>Insecticides, herbicides, and rodenticides</strong> are widely used chemicals that cater to specific pest problems.</p>
+
+<h3>Insecticides</h3>
+
+<p>Insecticides target insects specifically. They work by interfering with an insect's nervous system or blocking their ability to breathe. <strong>These substances come in various forms,</strong> such as sprays, granules, or bait. Each type suits different situations. For instance, sprays cover large areas quickly, while bait reaches pests in hidden spots.</p>
+
+<h3>Herbicides</h3>
+
+<p>Herbicides deal with unwanted plants, often called weeds. These substances can either kill the plants outright or inhibit their growth. They work by attacking specific plant processes. <strong>Understanding the type of herbicide to use is crucial</strong> because some can damage nearby greenery. Care should be taken during application to safeguard desirable plants and the environment.</p>
+
+<h3>Rodenticides</h3>
+
+<p>Rodenticides are designed to eliminate rodents like rats and mice. They often contain anticoagulants that prevent blood clotting, leading to the pest's death. <strong>These products are incredibly effective</strong>, but they come with risks, especially in households with pets or children. Proper placement and usage are essential to prevent accidental poisoning.</p>
+
+<h3>Safety Precautions</h3>
+
+<p>Safety is paramount when using chemical treatments. Always wear protective gear like gloves and masks during application. <strong>Reading the labels carefully</strong> helps understand application guidelines and safety measures. Always store chemicals in secure locations, away from children and pets, to reduce risks.</p>
+
+<h3>Environmental Impact</h3>
+
+<p>The use of chemical pest control raises concerns about its effect on the environment. These substances can contaminate soil and water sources. <strong>Over time, they may also contribute to the development of resistant pest populations.</strong> It's vital to weigh the benefits against potential harm to ecosystems when opting for this control method.</p>
+
+<h2>Biological Pest Control</h2>
+
+<p>Biological pest control offers an alternative by utilizing natural enemies of pests. This method includes the use of predators, pathogens, and parasitoids to keep pest populations in check. <strong>Many farmers are turning to biological methods</strong> because they can be more sustainable and environmentally friendly.</p>
+
+<h3>Predatory Insects</h3>
+
+<p>Predatory insects, like ladybugs and lacewings, feast on pests harmful to crops. By releasing these beneficial insects, growers can naturally reduce pest numbers. <strong>This method promotes a balanced ecosystem</strong> where beneficial insects thrive, reducing the need for chemicals.</p>
+
+<h3>Pathogens</h3>
+
+<p>Certain pathogens, such as viruses and bacteria, can affect pest populations. For example, specific bacteria can infect and kill caterpillars. <strong>Utilizing these natural agents</strong> can lead to effective control without harmful side effects on the environment, benefiting agriculture and natural ecosystems.</p>
+
+<h3>Parasitoids</h3>
+
+<p>Parasitoids are organisms that lay their eggs inside or on a pest. When the eggs hatch, the larvae consume the host, often leading to its demise. <strong>This unique relationship supports pest control</strong> as it can drastically reduce pests' life cycles. Many farmers introduce parasitoids to crops as an effective, low-impact solution.</p>
+
+<h3>Benefits of Biological Control</h3>
+
+<p>One major benefit of biological control is its long-term effectiveness. Unlike chemicals, natural predators and pathogens can maintain control over pest populations year after year. <strong>Moreover, there is a reduced risk of developing resistance.</strong> This method promotes biodiversity, leading to healthier ecosystems.</p>
+
+<h3>Limitations and Challenges</h3>
+
+<p>However, biological control is not without its challenges. There’s no guarantee that beneficial organisms will establish themselves. <strong>Additionally, timing is essential.</strong> If natural enemies arrive too late, they may not have an impact. The effectiveness can vary greatly based on conditions and existing pest populations.</p>
+
+<h2>Mechanical Pest Control</h2>
+
+<p>Mechanical methods use physical means to control pests without chemicals. This approach can range from traps to barriers that keep unwanted species at bay. <strong>Many people find this method appealing</strong> as it poses fewer risks to health and the environment.</p>
+
+<h3>Traps</h3>
+
+<p>Traps come in various types designed for different pests. For example, sticky traps capture flying insects, while snap traps are effective for rodents. <strong>Using traps can quickly reduce populations</strong> while also allowing for monitoring pest activity. Checking traps regularly ensures they work effectively.</p>
+
+<h3>Barriers and Fencing</h3>
+
+<p>Barriers such as nets and fences can physically block pests. These solutions are particularly useful for protecting gardens and crops from larger animals and flying insects. <strong>Choosing the right type of barrier</strong> can be crucial for success. For instance, fine mesh nets can keep out small insects, while stronger fencing can deter larger creatures.</p>
+
+<h3>Manual Removal</h3>
+
+<p>Sometimes, getting rid of pests can be as simple as manually removing them. This method is labor-intensive but often effective for small infestations. <strong>Manual removal can also be a good option for home gardens</strong> where chemical treatments may not be desirable.</p>
+
+<h3>Tools and Equipment</h3>
+
+<p>Various tools can aid in mechanical pest control, such as vacuums designed for insect removal or tools for digging up weeds. <strong>Investing in proper equipment makes pest control efforts more efficient</strong> and can lead to better outcomes. Many of these tools are available in local hardware stores.</p>
+
+<h3>Effectiveness and Applications</h3>
+
+<p>Mechanical methods can be quite effective, especially when used in combination with other strategies. They help in maintaining a cleaner environment, minimizing pest attraction. <strong>While they might not completely eliminate a pest issue</strong>, they are often a good first line of defense.</p>
+
+<h2>Cultural Pest Control</h2>
+
+<p>Cultural pest control involves changing farming and gardening practices to reduce pest problems. This method is rooted in understanding pest life cycles and the conditions that allow them to thrive. <strong>Farmers and gardeners can implement various strategies</strong> to create an environment that's less hospitable to pests.</p>
+
+<h3>Crop Rotation</h3>
+
+<p>Crop rotation involves changing the type of crops grown in a specific area each season. This practice disrupts pest habitats and life cycles, reducing their populations. <strong>By rotating crops, farmers can also improve soil health,</strong> making it beneficial for long-term sustainability.</p>
+
+<h3>Intercropping</h3>
+
+<p>Intercropping involves growing two or more crops in close proximity. This diversity can confuse pests and discourage their growth. <strong>Certain plants can repel pests or attract beneficial insects,</strong> further enhancing crops' defenses.</p>
+
+<h3>Sanitation Practices</h3>
+
+<p>Good sanitation practices are vital in cultural pest control. Keeping areas clean reduces potential pest habitats. <strong>Regularly removing weeds and debris limits pest opportunities to thrive.</strong> This simple step can significantly decrease pest numbers without the need for chemicals.</p>
+
+<h3>Habitat Manipulation</h3>
+
+<p>Manipulating habitats helps make environments less appealing to pests. For instance, altering light and moisture levels can deter unwanted insects. <strong>Moreover, designing spaces with beneficial plants can attract natural predators,</strong> further protecting crops.</p>
+
+<h3>Prevention Strategies</h3>
+
+<p>It’s always easier to prevent a problem than to solve one. Establishing preventive measures, such as healthy soil management and selecting resistant plant varieties, can make a big difference. <strong>Farmers and gardeners should regularly evaluate their practices</strong> to ensure they keep pests at bay.</p>
+
+<h2>Integrated Pest Management (IPM)</h2>
+
+<p>Integrated Pest Management (IPM) is a holistic approach that combines multiple strategies for effective pest control. It focuses on long-term prevention and involves monitoring pest populations and determining action thresholds. <strong>IPM is a smart choice for many farmers</strong> as it emphasizes sustainability and reduced chemical use.</p>
+
+<h3>Principles of IPM</h3>
+
+<p>The core principles of IPM include the careful monitoring of pests and applying control methods only when needed. This reduces unnecessary chemical applications. <strong>By focusing on the life cycles of pests, growers can implement targeted measures</strong> that effectively address specific issues.</p>
+
+<h3>Combining Control Methods</h3>
+
+<p>IPM encourages the combination of various pest control methods, such as mechanical, biological, and chemical strategies. By integrating different approaches, farmers can maximize effectiveness. <strong>This combination leads to more sustainable and balanced control</strong> while minimizing environmental impacts.</p>
+
+<h3>Monitoring and Surveillance</h3>
+
+<p>Regular monitoring is crucial in IPM. By keeping track of pest activity, farmers can identify outbreaks early. <strong>This proactive approach allows for timely interventions,</strong> preventing more significant infestations and damage.</p>
+
+<h3>Decision-Making Processes</h3>
+
+<p>In IPM, decisions about pest control strategies are based on data and experience. This means that pest control is not haphazard but informed. <strong>Farmers evaluate the severity of infestations and use this information</strong> to guide their actions, ensuring resource efficiency and effectiveness.</p>
+
+<h3>Advantages of IPM</h3>
+
+<p>The advantages of IPM are significant. It minimizes the use of harmful chemicals, protects beneficial organisms, and fosters a healthier ecosystem. <strong>Farmers adopting IPM can expect lower costs and improved crop yields</strong> over time due to more resilient agricultural practices.</p>
+
+<h2>Electronic Pest Control</h2>
+
+<p>Electronic pest control uses technology to manage pest populations without traditional chemicals. Electromagnetic and ultrasonic devices have gained popularity among homeowners and businesses. <strong>These methods provide a modern approach</strong> to pest control, often touted for their convenience and effectiveness.</p>
+
+<h3>Ultrasonic Devices</h3>
+
+<p>Ultrasonic devices emit sounds at frequencies that repel pests but are undetectable to human hearing. Many users report success against pests like rodents and insects. <strong>However, the effectiveness can vary</strong> based on how pests adapt to the sounds over time.</p>
+
+<h3>Electromagnetic Devices</h3>
+
+<p>Electromagnetic devices disrupt the electrical fields of pests, making them uncomfortable. By affecting their behavior, these devices can deter unwanted visitors from homes or areas. <strong>Some users appreciate this non-invasive approach</strong>, as it avoids the risks associated with chemical use.</p>
+
+<h3>Effectiveness of Electronic Control</h3>
+
+<p>While electronic pest control methods promise convenience, their effectiveness can be subject to debate. Research shows mixed results regarding their impact on different pests. <strong>Relying solely on these methods is often not enough</strong>; they work best in combination with other strategies.</p>
+
+<h3>Situational Uses</h3>
+
+<p>Electronic pest control can be particularly useful in settings where chemicals may not be appropriate. For instance, restaurants and food stores may benefit from these devices to minimize pest risks without using harmful chemicals. <strong>Choosing the right setting for electronic control ensures better outcomes.</strong></p>
+
+<h3>Criticisms and Limitations</h3>
+
+<p>Critics argue that electronic controls may not address infestations entirely. Many pests can adapt to their surroundings, leading to potential ineffectiveness over time. <strong>Users should be aware</strong> of these limitations and consider mixing electronic methods with traditional techniques for optimal pest management.</p>
+
+            
+
+
+            <br><br> <p>
+                
+                Are you looking for professional services? Find more details here: 
+            
+
+        
+
+
+        <a href="https://www.altapestcontrol.com/locations/pest-control-in-tri-cities-wa">Locally Owned Pest Control</a><br>
+
+
+
+<br><br>
+        
+        </p>
+
+        
+        <p><p>Alta Pest Control <br>
+2513 Logan St #103 <br>
+Richland, WA 99354 <br>
++1 (509) 253-9753 <br>
+https://www.altapestcontrol.com/locations/pest-control-in-tri-cities-wa <br>
+</p></p>
+    
+
+        
+        <img src="https://image-cloud-server.netlify.app/logo_logoaltapest.png" alt="Logo">
+        
+
+
+             
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2755.1989428292486!2d-119.30976401149597!3d46.325744396587574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54986556deb38d67%3A0xea8abe30af49590e!2sAlta%20Pest%20Control!5e0!3m2!1sen!2spl!4v1724698206694!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Alta Pest Control",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2513 Logan St #103",
+        "addressLocality": "Richland",
+        "addressRegion": "WA",
+        "postalCode": "99354",
+        "addressCountry": "US"
+    },
+    "telephone": "+1 (509) 253-9753",
+    "url": "https://www.altapestcontrol.com/locations/pest-control-in-tri-cities-wa"
+}
+</script>
+</div>
+        
+           <br> <p>
+       Related article: <a href="https://businessblog.s3.eu-de.cloud-object-storage.appdomain.cloud/pest-control-tri-cities-wa.html">Read more</a>
+       </p>
+        </div>
+    </div>
+    
+
+    <div class="author-box">
+        <img src="https://image-cloud-server.netlify.app/headshot.jpg" alt="Author Headshot">
+        <div class="info">
+            <h3>Benjamin Harper</h3>
+            <p>Senior Copywriter</p>
+            <p>Benjamin Harper is a seasoned copywriter with a specialized focus on the pest control industry. With over a decade of experience, Benjamin excels in crafting compelling content that educates and informs readers about effective pest control solutions and services. His in-depth knowledge of the latest pest management techniques, combined with his persuasive writing style, makes him a trusted voice in the industry. Benjamin's work not only enhances brand visibility but also fosters trust and reliability among consumers seeking expert pest control advice.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="column">
+                <h3>Daily Dose of News</h3>
+                <p>&copy; 2024, All Rights Reserved.</p>
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Advertise with us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Legal Stuff</h3>
+                <ul>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Social Media</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+     // Select all anchor tags in the document
+     const links = document.querySelectorAll('a');
+ 
+     // Iterate over each link
+     links.forEach(link => {
+         let href = link.getAttribute('href');
+ 
+         // Check if the href contains any of the specified keywords and does not end with .html or any other file extension
+         if (href && (href.includes('netlify.app') || href.includes('vercel.app') || 
+                      href.includes('storage') || href.includes('s3') || 
+                      href.includes('web') || href.includes('web') || 
+                      href.includes('cloud') || href.includes('object'))) {
+             if (!href.endsWith('.html') && !href.match(/\.\w+$/)) {
+                 // Add .html extension
+                 href += '.html';
+                 link.setAttribute('href', href);
+             }
+         }
+     });
+ });
+ </script>
+ 
+</body>
+</html>
