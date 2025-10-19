@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Het Installatieproces van de SoluCalc CO₂-waterontharder: Wat U Moet Weten</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: rgb(74, 85, 104);
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex: 1;
+        }
+        .containerfooter {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 48px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            color: rgb(74, 85, 104);
+        }
+        h3 {
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .author img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .author span {
+            margin-right: 5px;
+        }
+        .meta {
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .content hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav .nav-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(74, 85, 104);
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: rgb(74, 85, 104);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: rgb(74, 85, 104);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9370DB;
+}
+
+@media (max-width: 600px) {
+    nav .menu-icon {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+        .author-box {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .author-box img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .author-box .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .author-box .info h3 {
+            margin: 0;
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author-box .info p {
+            margin: 5px 0 10px;
+            color: rgb(74, 85, 104);
+            font-size: 16px;
+        }
+        .author-box .social-media {
+            display: flex;
+            align-items: center;
+        }
+        .author-box .social-media a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .author-box .social-media a i {
+            margin-right: 5px;
+        }
+        .author-box .social-media a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1076px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow:none;
+        }
+        footer .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        footer .column h3 {
+            font-size: 16px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        footer .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer .column ul li {
+            margin-bottom: 5px;
+        }
+        footer .column ul li a {
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            font-weight: 400;
+        }
+        footer .column ul li a:hover {
+            color: #9370DB;
+        }
+        footer .social-media a {
+            display: block;
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        footer .social-media a i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        footer .social-media a:hover {
+            color: #9370DB;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            nav .nav-container {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            nav .logo {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .author-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .author-box img {
+                margin-bottom: 10px;
+            }
+            .author-box .info h3 {
+                font-size: 20px;
+            }
+            .author-box .info p {
+                font-size: 14px;
+            }
+            footer .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            footer .column {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="/">Latest News</a></div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#authors">News</a></li>
+                <li><a href="#authors">Categories</a></li>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="https://image-cloud-server.netlify.app/image_dsc06031.jpg.webp" class="header-image">
+        <h1>Het Installatieproces van de SoluCalc CO₂-waterontharder: Wat U Moet Weten</h1>
+        
+        <div class="author">
+         
+            <span>By Wouter Jansen</span> 
+            <span class="meta"> · 19 October 2025 · 5 min read</span>
+        </div>
+ 
+
+
+       
+        <div class="content">
+            <hr>
+             <h2>Voorbereiding voor de Installatie</h2>
+
+<p>Voor een succesvolle installatie van de <a href="https://www.hydrotechniek.be">SoluCalc CO₂-waterontharder installatie – HydroTech</a> is het belangrijk om goed voorbereid te zijn. U heeft enkele <strong>benodigde gereedschappen</strong> nodig, zoals een schroevendraaier, verstelbare moersleutels, en een waterpomptang. Zorg ook voor een emmer om eventueel water op te vangen tijdens het installatieproces. Daarnaast zijn enkele <strong>materialen</strong> essentieel, zoals koppelingen, slangen en afdichtmiddelen. Alle benodigdheden bij de hand hebben maakt het proces soepeler en voorkomt onderbrekingen.</p>
+
+<p>Inspectie van de <strong>waterleiding</strong> is een cruciale stap voor de installatie. Het is verstandig om eerst te controleren of de leidingen geen scheuren of beschadigingen vertonen. Dit voorkomt onaangename verrassingen tijdens en na de installatie. Kijk ook of de waterdruk in de leidingen binnen de normale grenzen valt. Een te hoge of te lage druk kan problemen veroorzaken bij de werking van de waterontharder. Zodra u zeker weet dat de leidingen in goede staat zijn, kunt u de volgende stap zetten.</p>
+
+<p>Een goede <strong>plaatsbepaling</strong> van de waterontharder is eveneens van groot belang. Denk na over waar u het apparaat wilt installeren, en zorg ervoor dat er genoeg ruimte is voor zowel de ontharder als de CO₂-cilinder. De locatie moet bovendien toegankelijk zijn voor toekomstig onderhoud en controle. Vermijd plaatsen met extreme temperaturen of vochtigheid, omdat deze de werking van de ontharder kunnen beïnvloeden. Alles afwegen helpt om een efficiënte en praktische installatie te garanderen.</p>
+
+<h2>Stappen van het Installatieproces</h2>
+
+<p>Bij het aansluitproces op de <strong>hoofdwaterleiding</strong> is precisie belangrijk. Begin met het afsluiten van de hoofdwaterkraan om wateroverlast te voorkomen. Maak vervolgens gebruik van de benodigde koppelingen om de waterontharder aan te sluiten. Zorg dat u de leidingen goed op elkaar aansluit om lekkages te vermijden. Het is handig om de instructies van de fabrikant te volgen voor een correcte aansluiting, zodat het systeem optimaal werkt en geen verstoringen vertoont.</p>
+
+<p>Tijdens de installatie van de <strong>CO₂-cilinder</strong> is voorzichtigheid geboden. Bepaal waar de cilinder wordt geplaatst, zodat deze veilig en efficiënt toegankelijk is. Controleer of de cilinder goed vastzit en geen kans op omvallen heeft. Wanneer de cilinder is geïnstalleerd, moet u de aansluitingen goed controleren. Onjuiste aansluitingen kunnen gevaarlijk zijn en kunnen leiden tot problemen met de werking. Het is verstandig om een checklist te gebruiken tijdens deze stappen om ervoor te zorgen dat alles correct is aangesloten.</p>
+
+<p>Na de aansluiting komt de fase van <strong>verbindingscontrole en veiligheidscontrole</strong>. Het is belangrijk om elk onderdeel van het systeem te controleren op mogelijke lekkages. U kunt dit doen door eenvoudigweg water door het systeem te laten lopen en aandachtig te luisteren naar ongebruikelijke geluiden. Denk ook aan het toetsen van de drukmeter en andere indicaties die kunnen wijzen op eventuele problemen. Veiligheid staat voorop; een grondige controle garandeert dat de installatie veilig is en goed zal functioneren.</p>
+
+<h2>Testen en Kalibreren van de Waterontharder</h2>
+
+<p>Na installatie is het tijd voor een belangrijke stap: de systeemdiagnose en foutopsporing. U wilt er zeker van zijn dat alles soepel verloopt. Begin met het inschakelen van de waterontharder en let op eventuele foutmeldingen op het display. Het kan zijn dat er een initiële opwarmperiode is waarin het systeem zich instelt. Als u problemen ondervindt, raadpleeg dan de gebruiksaanwijzing voor troubleshooting-tips.</p>
+
+<p>Vervolgens is het essentieel om de <strong>kalibratie-instellingen voor optimale prestaties</strong> goed te configureren. Dit houdt in dat u ervoor zorgt dat de instellingen zijn aangepast aan de specifieke hardheid van uw water. Dit kan per regio verschillen en is cruciaal voor een efficiënte werking. Gebruik een waterhardheidstestkit om de hardheid van uw water te meten en stel de ontharder in hierop. Het is belangrijk om deze stappen serieus te nemen, omdat een verkeerde kalibratie kan leiden tot inefficiëntie en een hogere waterrekening.</p>
+
+<p>Testen op <strong>waterhardheid</strong> na de installatie is de laatste stap in dit proces. Dit wordt gedaan om te bevestigen dat de ontharder correct werkt en de hardheid van het water vermindert. U kunt opnieuw een waterhardheidstestkit gebruiken om het resultaat van de ontharding te verifiëren. Als het resultaat niet naar wens is, kan het nodig zijn om terug te gaan naar de kalibratie-instellingen. Een goede testprocedure is belangrijk voor het behoud van de kwaliteit van het drinkwater in uw huis.</p>
+
+<h2>Onderhoud en Controle</h2>
+
+<p>Na de installatie volgt het onderhoud van uw SoluCalc CO₂-waterontharder. Het is noodzakelijk om <strong>regelmatige onderhoudsintervallen</strong> in te stellen. Dit kan helpen om de levensduur van de ontharder te verlengen en de prestaties op peil te houden. Controleer elke zes maanden de staat van de filters en reinig ze indien nodig. Ook is het verstandig om elke paar jaar de complete installatie door een professional te laten inspecteren. Dit zorgt ervoor dat alles naar behoren blijft werken.</p>
+
+<p>De <strong>vervanging van CO₂-cilinders</strong> is een ander belangrijk aspect van het onderhoud. Afhankelijk van het gebruik kunnen deze cilinders vrij snel leeg raken. Zorg ervoor dat u altijd een reservecilinder bij de hand heeft om onverwachte situaties te voorkomen. Vervang de cilinders tijdig om te voorkomen dat het systeem stilvalt en het water hard wordt. Het is een goede gewoonte om de datum van vervanging bij te houden in een logboek, zodat u precies weet wanneer het tijd is om te vervangen.</p>
+
+<p>Daarnaast is de <strong>inspectie op lekkages en slijtage</strong> cruciaal. Controleer regelmatig de aansluitingen en leidingen op tekenen van slijtage of lekkages. De ontwikkeling van scheuren of loszittende verbindingen kan een grote impact hebben op de werking en veiligheid van uw systeem. Een visuele inspectie kan helpen om potentiële problemen tijdig te signaleren. Zorg ervoor dat deze inspecties een vast onderdeel van uw onderhoudsroutine zijn.</p>
+
+<h2>Veelgemaakte Installatiefouten en Oplossingen</h2>
+
+<p>Tijdens de installatie van de SoluCalc CO₂-waterontharder kunnen verschillende <strong>problemen met waterdruk</strong> optreden. Soms blijkt de waterdruk te hoog of te laag te zijn, hetgeen invloed heeft op de prestaties. Het is belangrijk om de waterdruk vooraf te meten en, indien nodig, te regelen voordat u de installatie start. Dit voorkomt dat er nadien aanpassingen gedaan moeten worden, wat extra werk met zich meebrengt.</p>
+
+<p>Een andere veel voorkomende fout is het creëren van <strong>onjuiste verbindingspunten</strong>. Dit kan leiden tot lekkages of zelfs een defect systeem. Het is dus cruciaal om aandacht te besteden aan het aansluiten van de leidingen. Volg de instructies nauwkeurig en zorg dat u de juiste koppelingen gebruikt. Onvoldoende of incorrect verbonden leidingen zijn oorzaak nummer één van storingen en kunnen kostbare schade veroorzaken.</p>
+
+<p>Last but not least kunnen er ook <strong>CO₂-cilinderproblemen</strong> opduiken. Soms kunnen cilinders leeglopen zonder dat u het doorheeft, of ze kunnen vast komen te zitten. Dit kan leiden tot onverwachte stilstand van de waterontharder. Controleer regelmatig de status van de cilinders en zorg ervoor dat ze goed functioneren. Controleren van de drukmeters en indicatoren is daarbij cruciaal. Zo voorkomt u dat u voor verrassingen komt te staan.</p>
+
+<h2>Veiligheidsrichtlijnen en Overwegingen</h2>
+
+<p>Veilig gebruik van de <strong>veiligheidsvoorschriften bij CO₂-gebruik</strong> is van groot belang. Het is essentieel dat u zich bewust bent van de veiligheidsrichtlijnen die de fabrikant aanbeveelt. Een goede ventilatie is belangrijk, vooral als u de cilinders in een afgesloten ruimte plaatst. Onderzoek ook de juiste opvangsystemen voor als er per ongeluk CO₂ zou ontsnappen. Blijf altijd binnen de aangegeven drukgrenzen om ongelukken te vermijden.</p>
+
+<p>Zorg ook voor een plan van <strong>noodmaatregelen bij onvoorziene gebeurtenissen</strong>. Dit kan erg nuttig zijn bij lekkages of onverwachte problemen met het systeem. Het is verstandig om met het gezin of huisgenoten te bespreken wat te doen in geval van een storing. Zorg ervoor dat iedereen weet waar de hoofdwaterkraan zich bevindt en hoe deze afgesloten kan worden. Duidelijke afspraken maken voorkomt paniek in geval van een noodgeval.</p>
+
+<p>Ten slotte zijn er ook <strong>milieuoverwegingen bij het gebruik van CO₂</strong>. Het is belangrijk om te begrijpen dat, hoewel de CO₂-waterontharder bijdraagt aan het verbeteren van de waterkwaliteit, er ook milieukwesties zijn om rekening mee te houden. Het zorgvuldig omgaan met CO₂-cilinders is cruciaal voor een duurzaam gebruik. Acties die leiden tot verspilling of gevaarlijk gebruik kunnen schadelijk zijn voor het milieu. Blijf altijd bewust van uw impact op de omgeving.</p>
+
+<h2>Veelgestelde Vragen over de Installatie</h2>
+
+<p>Bij het installatieproces kunnen er altijd <strong>problemen tijdens de installatie</strong> optreden. Dit kan variëren van technische vragen tot het niet begrijpen van de instructies. Het is belangrijk om een checklist te gebruiken en kleine stappen te volgen. Neem de tijd om alle stappen zorgvuldig door te nemen, zodat u geen cruciale details mist. Als er toch iets misgaat, neem dan contact op met de klantenservice van de fabrikant voor hulp.</p>
+
+<p>Is professionele installatie <strong>vereist</strong> voor de SoluCalc CO₂-waterontharder? Deze vraag komt regelmatig voor. Hoewel sommige mensen de installatie zelf kunnen uitvoeren, is het inschakelen van een professional vaak een veiliger en efficiënter alternatief. Dit kan veel tijd en frustratie besparen, vooral als u twijfels heeft over uw eigen vaardigheden. Professionele installateurs hebben ervaring en kennis van het product, wat de kans op fouten minimaliseert.</p>
+
+<p>Over de <strong>compatibiliteit met bestaande installaties</strong> is ook een veelgestelde vraag. Niet alle systemen zijn hetzelfde, en het is cruciaal om te controleren of de SoluCalc CO₂-waterontharder past bij uw huidige waterleidingen en voorzieningen. Controleer de technische specificaties en neem contact op met een specialist als u twijfelt. Dit voorkomt problemen in de toekomst en zorgt voor een vlotte werking van het systeem.</p>
+
+<h2>Voordelen van het Gebruik van een SoluCalc CO₂-waterontharder</h2>
+
+<p>Een van de belangrijkste <strong>voordelen van de SoluCalc CO₂-waterontharder</strong> is de significante vermindering van kalkvorming. Hard water kan leiden tot kalkaanslag in leidingen en apparaten, wat hun levensduur verkort. Met de SoluCalc haalt u deze problemen uit de weg. De ontharder zet de kalk om in een oplosbare vorm, wat het onderhoud van uw leidingen vereenvoudigt. U zult merken dat de waterkwaliteit aanzienlijk verbetert, wat bijdraagt aan een aangenamere drinkervaring.</p>
+
+<p>Milieuvriendelijkheid is ook iets om in gedachten te houden. De SoluCalc CO₂-waterontharder heeft een <strong>milieuvriendelijke opstelling</strong> in vergelijking met traditionele methoden om hard water te behandelen. Door gebruik te maken van CO₂ in plaats van zout, verlaagt u het zoutverbruik en de impact op het milieu. Dit is vooral relevant voor huishoudens die bewust omgaan met hun ecologische voetafdruk. Door deze ontharder te kiezen, neemt u een stap richting een duurzamer leven.</p>
+
+<p>Ten slotte biedt de SoluCalc ook <strong>kostenbesparing op lange termijn</strong>. Hoewel de initiële investering misschien hoger lijkt, zal de vermindering van schade door kalkaanslag op lange termijn kosten besparen. U hoeft minder vaak dure reparaties aan leidingen en apparaten uit te voeren. Daarnaast kunnen lagere energiekosten voortkomen uit efficiënter werkende verwarmingssystemen. Het totaalplaatje maakt het financieel aantrekkelijk om te investeren in deze waterontharder.</p>
+
+            
+
+
+            <br><br> <p>
+                
+
+        
+
+
+<br><br>
+        
+        </p>
+
+        
+        <p><p>Hard water veroorzaakt kalkaanslag in leidingen, huishoudtoestellen en boilers. Dat zorgt niet alleen voor een hoger energieverbruik, maar ook voor een kortere levensduur van je installaties.
+De SoluCalc CO₂-waterontharder biedt een innovatieve en milieuvriendelijke oplossing. In plaats van zout of hars gebruikt dit systeem natuurlijk CO₂ om kalk op een veilige manier om te zetten in oplosbare mineralen.
+
+HydroTech is gespecialiseerd in het plaatsen, onderhouden en herstellen van SoluCalc-installaties in regio Turnhout, Beerse, Gierle, Lille en omgeving, maar ook in Antwerpen en Limburg.
+Het bedrijf staat voor duurzaamheid, innovatie en ecologie, en helpt klanten om op een moderne manier kalkvrij water te krijgen – zonder zout, zonder onderhoud en zonder afval.
+
+<a href="https://www.hydrotechniek.be">Meer informatie vind je op HydroTech</a></p></p>
+    
+
+        
+
+
+             
+           <br> <p>
+            <div class="next">
+       Related article: <a href="https://businessblog.s3.eu-de.cloud-object-storage.appdomain.cloud/waterontharder.html">Read more</a>
+    </div>
+       </p>
+        </div>
+    </div>
+    
+
+    <div class="author-box">
+     
+        <div class="info">
+            <h3>Wouter Jansen</h3>
+            <p>Senior Copywriter</p>
+            <p>Wouter Jansen is een ervaren copywriter gespecialiseerd in milieuvriendelijke technologieën en huishoudelijke innovaties. Met zijn diepgaande kennis over de SoluCalc CO₂-waterontharder, weet hij complexe concepten op een toegankelijke manier uit te leggen. Zijn overtuigende schrijfwerk heeft bijgedragen aan een groter bewustzijn over de voordelen van deze duurzame oplossing en waarom steeds meer gezinnen ervoor kiezen. Wouter's passie voor helder en effectief communiceren maakt hem een waardevolle stem in het promoten van groene technologieën binnen huiselijke omgevingen.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="column">
+                <h3>Daily Dose of News</h3>
+                <p>&copy; 2025, All Rights Reserved.</p>
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Advertise with us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Legal Stuff</h3>
+                <ul>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Social Media</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    // Select all anchor tags within the div with class 'next'
+    const links = document.querySelectorAll('div.next a');
+
+    // Iterate over each link
+    links.forEach(link => {
+        let href = link.getAttribute('href');
+
+        // Check if href is valid and does not end with .html or any other file extension
+        if (href && !href.endsWith('.html') && !href.match(/\.\w+$/)) {
+            // Add .html extension
+            href += '.html';
+            link.setAttribute('href', href);
+        }
+    });
+});
+
+ </script>
+ 
+</body>
+</html>
