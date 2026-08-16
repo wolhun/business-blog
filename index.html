@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GH News</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Source+Serif+4:opsz,wght@8..60,400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <style>
@@ -437,6 +437,18 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 18px 12px 0 12px;
+    }
+
+    .page-title {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
     }
 
     /* TOP FEATURED SECTION (3 duże karty) */
@@ -945,7 +957,8 @@
 </head>
 <body>
 
-  <nav id="main-nav">
+  <header class="site-header">
+  <nav id="main-nav" aria-label="Primary navigation">
     <div class="nav-top">
         <div class="logo"><a href="index.html">GH News</a></div>
         <button class="subscribe-btn" id="open-modal-btn">Subscribe</button>
@@ -1229,7 +1242,7 @@
     </div>
 </nav>
 
-<div class="sticky-menu" id="sticky-menu">
+<nav class="sticky-menu" id="sticky-menu" aria-label="Sticky primary navigation">
     <div class="nav-container">
         <div class="menu-icon" id="sticky-menu-icon">
             <i class="fas fa-bars"></i>
@@ -1529,9 +1542,11 @@
 
         </ul>
     </div>
-</div>
+</nav>
+</header>
 
   <main class="page" id="home">
+    <h1 class="page-title">Latest Articles</h1>
 
     
   
@@ -1549,6 +1564,20 @@
     
   
     <section class="featured-grid" aria-label="Featured posts">
+      
+        <article class="featured-card"
+                 style="background-image: url('https://image-cloud-server.netlify.app/image_4397-2.jpg');">
+          <div class="featured-overlay"></div>
+          <div class="featured-content">
+            <div class="tag-row">
+              <span class="tag">business</span>
+              <span class="time">2026-08-16</span>
+            </div>
+            <h2 class="featured-title">
+              <a href="https://wolhun.github.io/business-blog/sprzet-na-impreze-poradnik.html">Zalety i wady różnych rodzajów sprzętu nagłośnieniowego na konferencje</a>
+            </h2>
+          </div>
+        </article>
       
         <article class="featured-card"
                  style="background-image: url('https://image-cloud-server.netlify.app/image_777img.png');">
@@ -1578,20 +1607,6 @@
           </div>
         </article>
       
-        <article class="featured-card"
-                 style="background-image: url('https://image-cloud-server.netlify.app/image_ChatGPT_Image_29.04.2026_o_11_25_12.png');">
-          <div class="featured-overlay"></div>
-          <div class="featured-content">
-            <div class="tag-row">
-              <span class="tag">fashion</span>
-              <span class="time">2026-04-29</span>
-            </div>
-            <h2 class="featured-title">
-              <a href="https://wolhun.github.io/business-blog/mens-chains-guide.html">The Role of Clasp Types in the Durability of Men&#39;s Silver Chains</a>
-            </h2>
-          </div>
-        </article>
-      
   
       
       
@@ -1611,6 +1626,21 @@
       </div>
   
       <div class="small-cards-grid">
+        
+          <article class="small-card"
+                   style="background-image: url('https://image-cloud-server.netlify.app/image_ChatGPT_Image_29.04.2026_o_11_25_12.png');">
+            <div class="small-overlay"></div>
+            <div class="small-content">
+              <h3 class="small-title">
+                <a href="https://wolhun.github.io/business-blog/mens-chains-guide.html">The Role of Clasp Types in the Durability of Men&#39;s Silver Chains</a>
+              </h3>
+              <div class="small-meta">
+                <span class="cat">fashion</span>
+                <span class="dot">|</span>
+                <span>2026-04-29</span>
+              </div>
+            </div>
+          </article>
         
           <article class="small-card"
                    style="background-image: url('https://image-cloud-server.netlify.app/image_2149432967.jpg');">
@@ -1687,21 +1717,6 @@
             </div>
           </article>
         
-          <article class="small-card"
-                   style="background-image: url('https://image-cloud-server.netlify.app/image_60510.jpg');">
-            <div class="small-overlay"></div>
-            <div class="small-content">
-              <h3 class="small-title">
-                <a href="https://wolhun.github.io/business-blog/entreprise-de-construction-fribourg-guide.html">Normes locales à respecter pour les entreprises de construction à Fribourg</a>
-              </h3>
-              <div class="small-meta">
-                <span class="cat">business</span>
-                <span class="dot">|</span>
-                <span>2025-12-17</span>
-              </div>
-            </div>
-          </article>
-        
   
         
         
@@ -1716,11 +1731,11 @@
         
           
           <article class="big-list-card"
-                   style="background-image: url('https://image-cloud-server.netlify.app/image_AdobeStock_389328016_Editorial_Use_Only-1024x614.jpeg.webp');">
+                   style="background-image: url('https://image-cloud-server.netlify.app/image_60510.jpg');">
             <div class="big-list-overlay"></div>
             <div class="big-list-content">
               <h4 class="big-list-title">
-                <a href="https://wolhun.github.io/business-blog/social-media-wissen.html">Die besten sozialen Medien für Schweizer Unternehmen auswählen</a>
+                <a href="https://wolhun.github.io/business-blog/entreprise-de-construction-fribourg-guide.html">Normes locales à respecter pour les entreprises de construction à Fribourg</a>
               </h4>
               <div class="big-list-meta">
                 <span class="cat">business</span>
@@ -1735,12 +1750,12 @@
           
             <div class="text-item">
               <p class="text-item-title">
-                <a href="https://wolhun.github.io/business-blog/jak-wybrac-firme-sprzatajaca.html">Jak wybrać firmę do sprzątania siłowni: Specyfika utrzymania czystości w miejscach fitness</a>
+                <a href="https://wolhun.github.io/business-blog/social-media-wissen.html">Die besten sozialen Medien für Schweizer Unternehmen auswählen</a>
               </p>
               <div class="text-item-meta">
-                <span class="cat">home-garden</span>
+                <span class="cat">business</span>
                 <span>|</span>
-                <span>2025-12-14</span>
+                <span>2025-12-17</span>
               </div>
             </div>
           
@@ -1753,16 +1768,16 @@
         
           
           <article class="big-list-card"
-                   style="background-image: url('https://image-cloud-server.netlify.app/image_The-Cost-Savings-of-Energy-Efficient-HVAC-Systems-for-Commercial-Buildings.jpg');">
+                   style="background-image: url('https://image-cloud-server.netlify.app/image_cleaning-concept-flat-lay-composition.jpg');">
             <div class="big-list-overlay"></div>
             <div class="big-list-content">
               <h4 class="big-list-title">
-                <a href="https://wolhun.github.io/business-blog/commercial-hvac-systems.html">Methods for Detecting Unauthorized HVAC Modifications in Buildings</a>
+                <a href="https://wolhun.github.io/business-blog/jak-wybrac-firme-sprzatajaca.html">Jak wybrać firmę do sprzątania siłowni: Specyfika utrzymania czystości w miejscach fitness</a>
               </h4>
               <div class="big-list-meta">
-                <span class="cat">business</span>
+                <span class="cat">home-garden</span>
                 <span class="dot">|</span>
-                <span>2025-11-29</span>
+                <span>2025-12-14</span>
                 <span class="dot">|</span>
                 <span>2 min</span>
               </div>
@@ -1772,12 +1787,12 @@
           
             <div class="text-item">
               <p class="text-item-title">
-                <a href="https://wolhun.github.io/business-blog/how-to-choose-a-marketing-agency.html">How to Assess a Marketing Agency&#39;s Portfolio and Case Studies Effectively</a>
+                <a href="https://wolhun.github.io/business-blog/commercial-hvac-systems.html">Methods for Detecting Unauthorized HVAC Modifications in Buildings</a>
               </p>
               <div class="text-item-meta">
                 <span class="cat">business</span>
                 <span>|</span>
-                <span>2025-11-24</span>
+                <span>2025-11-29</span>
               </div>
             </div>
           
@@ -1797,22 +1812,33 @@
         
           
           <article class="big-list-card"
-                   style="background-image: url('https://image-cloud-server.netlify.app/image_Paralegal-vs-Lawyer-QandA.jpg');">
+                   style="background-image: url('https://image-cloud-server.netlify.app/image_how-to-choose-digital-marketing-agency.png');">
             <div class="big-list-overlay"></div>
             <div class="big-list-content">
               <h4 class="big-list-title">
-                <a href="https://wolhun.github.io/business-blog/how-to-choose-a-lawyer.html">Choosing a Criminal Defense Lawyer: What You Need to Know</a>
+                <a href="https://wolhun.github.io/business-blog/how-to-choose-a-marketing-agency.html">How to Assess a Marketing Agency&#39;s Portfolio and Case Studies Effectively</a>
               </h4>
               <div class="big-list-meta">
-                <span class="cat">home-garden</span>
+                <span class="cat">business</span>
                 <span class="dot">|</span>
-                <span>2025-11-23</span>
+                <span>2025-11-24</span>
                 <span class="dot">|</span>
                 <span>2 min</span>
               </div>
             </div>
           </article>
     
+          
+            <div class="text-item">
+              <p class="text-item-title">
+                <a href="https://wolhun.github.io/business-blog/how-to-choose-a-lawyer.html">Choosing a Criminal Defense Lawyer: What You Need to Know</a>
+              </p>
+              <div class="text-item-meta">
+                <span class="cat">home-garden</span>
+                <span>|</span>
+                <span>2025-11-23</span>
+              </div>
+            </div>
           
         
       </div>
